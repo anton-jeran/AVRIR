@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content=": AV-RIR: Audio-Visual Room Impulse Response Estimation.">
+  <meta name="keywords" content="binaural acoustics, material-aware, sound propogation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AV-RIR: Audio-Visual Room Impulse Response Estimation </title>
+
+<!--   <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FBHPZN38ZP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-FBHPZN38ZP');
+  </script> -->
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./data/css/bulma.min.css">
+  <link rel="stylesheet" href="./data/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./data/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./data/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./data/css/index.css">
+  <link rel="icon" href="./data/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./data/js/fontawesome.all.min.js"></script>
+  <!-- <script src="./data/js/bulma-carousel.min.js"></script> -->
+  <!-- <script src="./data/js/bulma-slider.min.js"></script> -->
+  <!-- <script src="./data/js/index.js"></script> -->
+
+  <style>
+    table {
+      border-collapse: separate;
+      text-indent: initial;
+    }
+    td {
+      display: table-cell;
+      vertical-align: inherit;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+  </style>
+
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-widescreen">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">AV-RIR: Audio-Visual Room Impulse Response Estimation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://anton-jeran.github.io/antonjeran.github.io/">Anton Ratnarajah, </a></span>
+            <span class="author-block">
+              <a href="https://sreyan88.github.io//"> Sreyan Ghosh, </a></span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/realsonalkumar/">Sonal Kumar, </a></span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/pchiniya/">Purva Chiniya, </a></span>
+            <span class="author-block">
+              <a href="https://www.cs.umd.edu/people/dmanocha">Dinesh Manocha</a></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"> University of Maryland, College Park, USA</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2312.00834"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+            
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-widescreen">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Accurate estimation of Room Impulse Response (RIR), which captures an environment's acoustic properties, is important for speech processing and AR/VR applications. We propose AV-RIR, a novel multi-modal multi-task learning approach to accurately estimate the RIR from a given reverberant speech signal and the visual cues of its corresponding environment. AV-RIR builds on a novel neural codec-based architecture that effectively captures environment geometry and materials properties and solves speech dereverberation as an auxiliary task by using multi-task learning. We also propose Geo-Mat features that augment material information into visual cues and CRIP that improves late reverberation components in the estimated RIR via image-to-RIR retrieval by 86%. Empirical results show that AV-RIR quantitatively outperforms previous audio-only and visual-only approaches by achieving 36% - 63% improvement across various acoustic metrics in RIR estimation. Additionally, it also achieves higher preference scores in human evaluation. As an auxiliary benefit, dereverbed speech from AV-RIR shows competitive performance with the state-of-the-art in various spoken language processing tasks and outperforms reverberation time error score in the real-world AVSpeech dataset.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+<section class="section">
+  <div class="container is-widescreen">
+    <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+    <h1 class="title is-1 publication-title">Supplementary Video</h1>
+    <div class="container is-widescreen">
+          <div align="center">
+            <iframe width="1100" height="600" src="https://www.youtube.com/embed/tTsKhviukAE" frameborder="0" allowfullscreen></iframe>
+            <p>
+                       </p>
+    </div>
+  </div> 
+</div>
+</div>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-widescreen content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+ @article{ratnarajah2023av,
+  title={AV-RIR: Audio-Visual Room Impulse Response Estimation},
+  author={Ratnarajah, Anton and Ghosh, Sreyan and Kumar, Sonal and Chiniya, Purva and Manocha, Dinesh},
+  journal={arXiv preprint arXiv:2312.00834},
+  year={2023}
+}
+</code></pre>
+  </div>
+</section>
